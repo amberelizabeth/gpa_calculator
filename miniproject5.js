@@ -1,18 +1,18 @@
 function calculateGPA(grades){
 
-    var i = 0;
+    var grade;
     var gpa = 0;
     var letterGPA = "";
 
-    for(i=0; i<grades.length; i++)
+    for(grade in grades)
     {
-        if(grades[i]==="A"){
+        if(grades[grade]==="A"){
             gpa += 100;
         }
-        else if(grades[i]==="B"){
+        else if(grades[grade]==="B"){
             gpa += 80;
         }
-        else if(grades[i]==="C"){
+        else if(grades[grade]==="C"){
             gpa += 70;
         }
         else{
@@ -58,4 +58,4 @@ function displayArray(arr){
 }
 
 
-calculateGPA(["B", "B", "A"]);
+calculateGPA(["B", "B", "C", "C", "C","C"]);
